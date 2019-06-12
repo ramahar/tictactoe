@@ -1,13 +1,13 @@
-var winners = new Array();
+var winners = new Array();  // Stores all winning combinations
 var player1Selections = new Array();
 var player2Selections = new Array();
 var timer;
 var numberOfPlayers = 2;
-var currentPlayer = 0;
+var currentPlayer = 0;  // Index of current player 
 var move = 0;
 var points1 = 0;    // player 1 points
 var points2 = 0;    // player 2 points
-var size = 3;
+var size = 3;   // Board size 
 
 function drawBoard() {
     var Parent = document.getElementById("game");
@@ -121,7 +121,6 @@ function checkWinner() {
     
     if (playerSelections.length >= size) {
         // check if any 'winners' are also in your selections
-        
         for (i = 0; i < winners.length; i++) {
             var sets = winners[i];  // winning hand
             var setFound = true;
