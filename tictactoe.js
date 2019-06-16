@@ -24,6 +24,7 @@ function drawBoard() {
             var col = document.createElement("td");
             col.id = counter;
 
+            // Handle X's and O's 
             var handler = function(e) {
                 if (currentPlayer == 0) {
                     this.innerHTML = "X";
@@ -87,6 +88,8 @@ function d(id)
     var el = document.getElementById(id);
     return el;
 }
+
+// Resets board
 function reset()
 {
     currentPlayer = 0;
@@ -96,6 +99,7 @@ function reset()
     d('player2').classList.remove('selected');
 }
 
+// Store winning combinations
 function loadAnswers()
 {
     winners.push([1, 2, 3]);
