@@ -110,7 +110,7 @@ function loadAnswers()
 
 function checkWinner() {
     // check if current player has a winning hand
-    // only stsrt checking when player x has size number of selections
+    // Start checking when player x has size number of selections
     var win = false;
     var playerSelections = new Array();
 
@@ -127,7 +127,7 @@ function checkWinner() {
             
             for (r = 0; r < sets.length; r++) {
                 // check if number is in current players hand
-                // if not, break, not winner
+                // if not, break
                 var found = false;
                 
                 // players hand
@@ -152,7 +152,6 @@ function checkWinner() {
             }
         }
     }
-
     return win;
 } 
 
