@@ -159,4 +159,5 @@ function checkWinner() {
     return win;
 } 
 
+// Draw board when whole page has been loaded 
 window.addEventListener('load', drawBoard);
